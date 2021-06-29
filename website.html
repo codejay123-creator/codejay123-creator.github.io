@@ -1,55 +1,43 @@
 <!DOCTYPE html>
 <html>
-<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+body {margin:0}
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+.icon-bar {
+  width: 90px;
+  background-color: #555;
 }
 
-li {
-  float: left;
-}
-
-li a {
-  display: inline-block;
-  color: white;
+.icon-bar a {
+  display: block;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
 }
 
-li a:hover {
-  background-color: #111;
+.icon-bar a:hover {
+  background-color: #000;
 }
 
 .active {
-  background-color: red;
+  background-color: #ff0909;
 }
-
 </style>
-</head>
 <body>
- 
-  </style>
-  </head>
-  <body>
-  
-  
 
-  <div class="center">
-    <p>Jun Cool Shop.</p>
-  </div>
-<ul>
-  <li><a href="#home" class="active">Home</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
-</ul>
+<div class="icon-bar">
+  <a class="active" href="#"><i class="fa fa-home"></i></a> 
+  <a href="#"><i class="fa fa-search"></i></a> 
+  <a href="#"><i class="fa fa-envelope"></i></a> 
+  <a href="#"><i class="fa fa-cart-plus"></i></a>
 
+
+</div>
+  
 </body>
-</html>
+</html> 
+
