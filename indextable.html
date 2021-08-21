@@ -1,109 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-* {
-  box-sizing: border-box;
-}
+<meta charset=" utf-8">
+<title>Peace forever</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript">
+        $(document).ready(function() {
+          $("#newrows").click(function() {
+           var addcontrols="<tr>"
+            addcontrols+="<td><input type='text' name='Employee name' placeholder='Enter Name..'></td>"
+            addcontrols+="<td><input type='text' name='Email' placeholder='Enter Email..'></td>"
+            addcontrols+="<td><input type='text' name='Salary' placeholder='Enter Salary..'></td>"
 
-.row {
-  margin-left:-5px;
-  margin-right:-5px;
-}
-  
-.column {
-  float: left;
-  width: 50%;
-  padding: 5px;
-}
 
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  width: 100%;
-  border: 1px solid #ddd;
-}
-
-th, td {
-  text-align: left;
-  padding: 16px;
-}
-
-tr:nth-child(even) {
-  background-color: #f2f2f2;
-
-}
-#red
-  {
-    background-color: red;
-  }
-</style>
+            addcontrols+="</tr>";
+            $("table tbody").append(addcontrols);
+          });
+        });
+</script>
 </head>
 <body>
 
-<h2>Tables project 1.5 </h2>
-<!--How to create side-by-side tables with CSS:-->
-<!-- tr:nth-child you can select a specific element -->
-<!-- ID #id you can select a particular/individual element you would like to tyle with.-->
+  <center>
+   <h1>New table with JQUARY</h1> 
+   <h2>Check this out</h2>
+   <table border="1">
+      <thead style="color:cornflowerblue;">
+        <tr>
+          <th>Employee Name</th>
+          <th>Email</th>
+          <th>Salary</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3"><input type="button" value="Add New Row" id="newrows" style="width:500px;"></td>
+        </tr>
+      </tfoot>
+   </table>
+  </center>
 
-<div class="row">
-  <div class="column">
-    <table>
-      <tr>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Points</th>
-      </tr>
-      <tr>
-        <td>Jill</td>
-        <td>Smith</td>
-        <td>50</td>
-      </tr>
-      <tr>
-        <td>Eve</td>
-        <td>Jackson</td>
-        <td>94</td>
-      </tr>
-      <tr>
-        <td>Adam</td>
-        <td>Johnson</td>
-        <td>67</td>
-      </tr>
-    </table>
-  </div>
-  <div class="column">
-    <table>
-      <tr>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Points</th>
-      </tr>
-      <tr>
-        <td>Jill</td>
-        <td>Smith</td>
-        <td>50</td>
-      </tr>
-      <tr>
-        <td>Eve</td>
-        <td id="red">Jackson</td>
-        <td>94</td>
-      </tr>
-      <tr>
-        <td>Adam</td>
-        <td>Johnson</td>
-        <td>67</td>
-      </tr>
-    </table>
-  </div>
-</div>
+
+
+
+
 
 </body>
-</html>
 
+  </body>
+</html>
