@@ -1,62 +1,38 @@
-+<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  $("#hide").click(function(){
-    $("#red").hide();
+  <script>
+  $(document).ready(function(){
+    $("#hide").click(function(){
+      $("#red").hide();
+    });
+    $("#show").click(function(){
+      $("#red").show();
+    });
   });
-  $("#show").click(function(){
-    $("#red").show();
-  });
-});
-</script>
-<body>
-
-  <p>If you click on the "Hide" button, I will disappear.</p>
+  </script>
+  <body>
   
-  <button id="hide">Hide</button>
-  <button id="show">Show</button>
+    <p> Click on the "Hide" and "Show" button, I will disappear.</p>
+    
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+  
 <style>
-* {
-  box-sizing: border-box;
-}
-
-.row {
-  margin-left:-5px;
-  margin-right:-5px;
-}
-  
-.column {
-  float: left;
-  width: 50%;
-  padding: 5px;
-}
-
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-table {
+table, th, td {
+  border: 1px solid black;
   border-collapse: collapse;
-  border-spacing: 0;
-  width: 100%;
-  border: 1px solid #ddd;
 }
-
 th, td {
+  padding: 15px;
   text-align: left;
-  padding: 16px;
+}
+#t01 {
+  width: 100%;    
+  
 }
 
-tr:nth-child(even) {
-  background-color: #f2f2f2;
-
-}
 #red
   {
     background-color: red;
@@ -65,61 +41,63 @@ tr:nth-child(even) {
 </head>
 <body>
 
-<h2>Tables project 1.5 </h2>
-<!--How to create side-by-side tables with CSS:-->
-<!-- tr:nth-child you can select a specific element -->
-<!-- ID #id you can select a particular/individual element you would like to tyle with.-->
+<h2>Styling Tables2.1</h2>
 
-<div class="row">
-  <div class="column">
-    <table>
-      <tr>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Points</th>
-      </tr>
-      <tr>
-        <td>Jill</td>
-        <td>Smith</td>
-        <td>50</td>
-      </tr>
-      <tr>
-        <td>Eve</td>
-        <td>Jackson</td>
-        <td>94</td>
-      </tr>
-      <tr>
-        <td>Adam</td>
-        <td>Johnson</td>
-        <td>67</td>
-      </tr>
-    </table>
-  </div>
-  <div class="column">
-    <table>
-      <tr>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Points</th>
-      </tr>
-      <tr>
-        <td>Jill</td>
-        <td>Smith</td>
-        <td>50</td>
-      </tr>
-      <tr>
-        <td>Eve</td>
-        <td id="red">Jackson</td>
-        <td>94</td>
-      </tr>
-      <tr>
-        <td>Adam</td>
-        <td>Johnson</td>
-        <td>67</td>
-      </tr>
-    </table>
-  </div>
-</div>
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+    <th>Gender</th>
+  </tr>
+  <tr>
+    <td>Kayla</td>
+    <td>Smith</td>
+    <td>5</td>
+    <td>Female</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Holland</td>
+    <td>34</td>
+   <td>Female</td>
+  </tr>
+  <tr>
+    <td>Frank</td>
+    <td>Adam</td>
+    <td>18</td>
+    <td>Male</td>
+  </tr>
+</table>
+<br>
+
+<table id="t01">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+    <th>Gender</th>
+  </tr>
+  <tr>
+    <td>David</td>
+    <td>Shelly</td>
+    <td>57</td>
+    <td>Male</td>
+  </tr>
+  <tr>
+    <td>Jacky</td>
+    <td id="red">Jackson</td>
+    <td>24</td>
+    <td>Female</td>
+  </tr>
+  <tr>
+    <td>April</td>
+    <td>Thomas</td>
+    <td>18</td>
+    <td>Female</td>
+  </tr>
+</table>
 
 </body>
 </html>
+
